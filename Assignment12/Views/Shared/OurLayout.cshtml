@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="topPanel">
+        <table>
+            <tr>
+                <h1  style="color:white"">Cricket Info Web</h1>
+            </tr>
+
+            <tr>
+                <td colspan="4">
+                <td>@Html.ActionLink("Team Home", "Index", "Team")</td>
+                <td>@Html.ActionLink("Team Display", "Index", "Team")</td>
+
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="mainPanel">
+        @RenderBody()
+    </div>
+    <div class="footer">
+        <h2 style="color:white">All Rights Reserved </h2>
+    </div>
+</body>
+</html>
